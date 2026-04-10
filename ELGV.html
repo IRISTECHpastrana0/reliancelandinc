@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Executive Queen Room</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FIXED Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .room-hero {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .room-image img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .room-info {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #16a34a;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .box {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    #lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 15px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Reliance Land Incorporated</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- HERO STYLE (Booking.com style) -->
+  <div class="room-hero">
+
+    <div class="room-image">
+      <img src="https://source.unsplash.com/1000x800/?hotel-room,luxury">
+    </div>
+
+    <div class="room-info">
+
+      <div class="title">Executive Queen Room</div>
+      <div class="subtitle">Luxury stay with city & garden view</div>
+
+      <div class="price">₱5,500 / night</div>
+
+      <a href="contact.html" class="btn">Reserve Now</a>
+
+      <ul>
+        <li>✔ 1 Queen Bed</li>
+        <li>✔ Up to 3 Guests</li>
+        <li>✔ Free WiFi</li>
+        <li>✔ City & Garden View</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section-title">Room Features</div>
+  <div class="grid">
+    <div class="box"><strong>Bed</strong><p>Queen Bed</p></div>
+    <div class="box"><strong>Guests</strong><p>3</p></div>
+    <div class="box"><strong>Size</strong><p>35–40 sqm</p></div>
+    <div class="box"><strong>View</strong><p>City & Garden</p></div>
+  </div>
+
+  <!-- SPACE -->
+  <div class="section-title">The Space</div>
+  <div class="box">
+    <ul>
+      <li>Accommodates: 3 Persons</li>
+      <li>Bathrooms: 1</li>
+      <li>Check-in: 14:00</li>
+      <li>Check-out: 12:00</li>
+    </ul>
+  </div>
+
+  <!-- ROOM AMENITIES -->
+<div class="section-title">Room Amenities</div>
+
+<div class="grid">
+  <div class="box"><i class="fa-solid fa-tv"></i> TV</div>
+  <div class="box"><i class="fa-solid fa-wifi"></i> Free Wifi</div>
+  <div class="box"><i class="fa-solid fa-lock"></i> Safe</div>
+  <div class="box"><i class="fa-solid fa-ban-smoking"></i> Non-Smoking</div>
+  <div class="box"><i class="fa-solid fa-wind"></i> Air Conditioning</div>
+  <div class="box"><i class="fa-solid fa-shower"></i> Shower Heater</div>
+  <div class="box"><i class="fa-solid fa-phone"></i> Phone</div>
+  <div class="box"><i class="fa-solid fa-wind"></i> Hair Dryer</div>
+</div>
+
+<!-- HOTEL AMENITIES -->
+<div class="section-title">Hotel Amenities</div>
+
+<div class="grid">
+  <div class="box"><i class="fa-solid fa-dumbbell"></i> Gym</div>
+  <div class="box"><i class="fa-solid fa-square-parking"></i> Parking</div>
+  <div class="box"><i class="fa-solid fa-hot-tub-person"></i> Sauna</div>
+  <div class="box"><i class="fa-solid fa-person-swimming"></i> Swimming Pool</div>
+</div>
+  <!-- GALLERY -->
+  <div class="section-title">Room Gallery</div>
+
+  <div class="gallery">
+    <img src="https://source.unsplash.com/800x600/?hotel-room,bed" onclick="openImage(this.src)">
+    <img src="https://source.unsplash.com/800x600/?hotel-bathroom" onclick="openImage(this.src)">
+    <img src="https://source.unsplash.com/800x600/?hotel-view" onclick="openImage(this.src)">
+    <img src="https://source.unsplash.com/800x600/?hotel-lobby" onclick="openImage(this.src)">
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeImage()">
+    <img id="lightbox-img">
+  </div>
+
+  <a class="back" href="properties.html">← Back to Properties</a>
+
+</div>
+
+<footer>
+  © 2026 Reliance Land Incorporated
+</footer>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
