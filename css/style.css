@@ -22,6 +22,65 @@ header {
   top: 0;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px; /* adjust size */
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.feature-box {
+  flex: 1;
+}
+
+.feature-box .icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1e1e1e;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.about-intro {
+  text-align: center;
+  padding: 40px 10% 10px;
+}
+
+.about-intro h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
 nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -35,7 +94,7 @@ nav a:hover {
 
 .hero {
   height: 70vh;
-  background: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6") center/cover;
+  background: url("../images/KLXfront0.jpg") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
